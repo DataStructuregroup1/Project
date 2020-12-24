@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+h1{
+	color: #F8F8FF;
+	font-size:45px;
+	font-family: Andale Mono, monospace;
+	font-weight: 700;
+}
+
+h2 {
+	color: #F8F8FF;
+	font-size: 25px;
+	font-family: Andale Mono, monospace;
+	display : inline;
+	
+}
+
+h3 {
+	color: #CCCCFF;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: Andale Mono, monospace;
+	display : inline;
+}
+
+a {
+	color: #ADD8E6;
+	font-size: 22px;
+	font-family: "STHeiti", Arial, serif;
+}
+
+
