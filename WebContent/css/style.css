@@ -1,12 +1,42 @@
 @charset "UTF-8";
 
-h1{
-	color: #F8F8FF;
+.typing {
+    width: 7em;
+    /*white-space: nowrap;*/
+    border-right: 5px solid transparent;
+    animation: typing 3s steps(11, end), blink-caret .75s infinite;
+    overflow: hidden;
+    
+    color: #F8F8FF;
 	font-size:45px;
 	font-family: Andale Mono, monospace;
 	font-weight: 700;
 }
+/* 列印效果 */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 7em; }
+}
+/* 游標閃 */
+@keyframes blink-caret {
+  from, to{ box-shadow: 3px 0 0 0 transparent; }
+  50% { box-shadow: 3px 0 0 0; }
+}
 
+@Keyframes donut-spin {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+}
+
+.donut {
+   display: inline-block;
+   animation: donut-spin 2s linear infinite;
+}
 
 
 form{
@@ -16,8 +46,8 @@ form{
 
 #text {
 	padding:10px 20px;
-	margin: 2px solid #D0D3D4;
-	border-radius:5px;
+	border: 2px solid #FFFFFF;
+	border-radius:10px;
 	width:60%;
 	line-height:20px;
 	background-color:#273952;
@@ -28,13 +58,14 @@ form{
 	font-size:16px;
 	font-family:Optima, sans-serif;
 	color: white;
+	letter-spacing: 3px;
 }
 
 button{
 	border: none;
     border-radius: 5px;
-    font-size: 16px;
-    font: bold 12px Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font: bold 13px Arial, Helvetica, sans-serif;
     padding: 10px 15px;
     text-decoration: none;
     -webkit-transition-duration: 0.4s;
@@ -46,17 +77,7 @@ button:hover{
     color: white;
 }
 
-#btm1 {
-	font-size:12px;
-	padding:8px 12px;
-	background: #D0D3D4;
-    color: white;
-}
 
-#btm1:hover{
-	background-color: #cccccc;
-    color: white;
-}
 
 #btm2 {
 	background: #9370DB;
@@ -87,6 +108,7 @@ button:hover{
 	background-color: #cccccc;
     color: white;
 }
+
 
 
 

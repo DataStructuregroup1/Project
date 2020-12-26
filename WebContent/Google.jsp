@@ -9,7 +9,18 @@
 </head>
 <body style="background-color:#273952;">
 
-<center><a href ='Search.jsp' style="text-decoration:none;"> <h1> Seekin'tern </h1> </a> </center>
+
+<br><br>
+
+<div class='title'>
+
+<div class='donut'> <img src='img/snowflake.png'></div>
+<center>
+<a href ='Search.jsp' style="text-decoration:none;"><h1> Seekin'tern</h1></a>
+</center>
+</div>
+
+
 <h2>Searches related to </h2> <h3> <%= request.getParameter("keyword") %> </h3> 
 
 <br><br><br><br>
@@ -17,11 +28,18 @@
 <%
 String[][] orderList = (String[][])  request.getAttribute("query");
 for(int i =0 ; i < orderList.length;i++){%>
-
-	<a href='<%= orderList[i][1] %>' style="text-decoration:none;"><img src='img/Search.png'>&nbsp;&nbsp;<%= orderList[i][0] %></a>
-	<br>
+	<div class='sel'>
+	<div class='mid'>
+	&nbsp;&nbsp;
+	<a href='<%= orderList[i][1] %>' style="text-decoration:none;">
+	<img src='img/Search1.png'>
+	&nbsp;&nbsp;
+	<%= orderList[i][0] %>
+	</a>
+	</div>
+	</div>
 	
-	<br><br>
+	<br><br><br>
 <%
 }
 %>

@@ -9,14 +9,16 @@
 </head>
 
 <body style="background-color: #273952;">
-<br><br><br><br><br>
-
+<br><br><br><br><br><br><br><br>
 
 
 <center>
 <div class='donut'> <img src='img/snowflake.png'></div>
-<a href ='Search.jsp' style="text-decoration:none;"> <h1> Seekin'tern </h1> </a> 
+
+<p class="typing">Seekin'tern</p>
+
 </center>
+
 
 <br>
 
@@ -25,7 +27,7 @@
 </center>
 </form>
 
-<br><br><br>
+<br><br>
 
 <center>
 <form action='${requestUri}' method='get'>
@@ -34,19 +36,18 @@
 </form>
 
 <form action='${requestUri}' method='get'>
-<input type='hidden' name='keyword' id='form2' value='Java'>
+<input type='hidden' name='keyword' id='form2' value='iiii'>
 <button type='submit' value='Java' id='btm3' >Java</button>
 </form>
 
 <form action='${requestUri}' method='get'>
 <input type='hidden' name='keyword' id='form3' value='Javascript'>
-<button type='submit' value='javascript實習' id='btm4'>Javascirpt</button>
+<button type='submit' value='javascript' id='btm4'>Javascript</button>
 </form>
 </center>
 
 <br><br><br><br>
 
-<center><img src='img/bg.jpg'></center>
 
 </body>
 </html>
