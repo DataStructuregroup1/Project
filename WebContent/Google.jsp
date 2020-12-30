@@ -16,7 +16,7 @@
 
 <div class='donut'> <img src='img/snowflake.png'></div>
 <center>
-<a href ='Search.jsp' style="text-decoration:none;"><h1> Seekin'tern</h1></a>
+<h1> Seekin'tern</h1>
 </center>
 </div>
 

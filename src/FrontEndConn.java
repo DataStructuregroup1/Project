@@ -42,13 +42,13 @@ public class FrontEndConn extends HttpServlet {
 		GoogleQuery google = new GoogleQuery(request.getParameter("keyword")+"實習");
 		HashMap<String, String> query = google.query();
 		
-		String[][] s = new String[query.size()][2];
+		String[][] s = new String[15][2];
 		request.setAttribute("query", s);
 		int num = 0;
 //		google.sort();
 		PriorityQueue<WebNode> q = google.sorted;
 //		  WebNode w;
-		  while(q.isEmpty()==false) {
+		  for(int i=0;i<15;i++) {
 		      String key = q.poll().webPage.title;
 		      String value = query.get(key);
 		      s[num][0] = key;

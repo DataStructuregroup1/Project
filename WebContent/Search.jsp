@@ -36,7 +36,7 @@
 </form>
 
 <form action='${requestUri}' method='get'>
-<input type='hidden' name='keyword' id='form2' value='iiii'>
+<input type='hidden' name='keyword' id='form2' value='java'>
 <button type='submit' value='Java' id='btm3' >Java</button>
 </form>
 
